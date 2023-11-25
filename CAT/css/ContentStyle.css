@@ -1,0 +1,12 @@
+/* Improved styling for .content img */
+.content img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    display: block; /* Ensures images don't have extra space beneath them */
+    margin-bottom: 15px; /* Add some space between images and other content */
+    border-radius: 8px; /* Adds a slight rounded corner to images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Provides a subtle shadow effect */
+
+    /* If you want to enforce a specific width while maintaining responsiveness */
+    /* width: 400px; */
+    /* You can uncomment and adjust the width if necessary */
+}

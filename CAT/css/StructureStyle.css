@@ -1,0 +1,79 @@
+/* Reset some default styles for consistency */
+body {
+    background-color: #ededed; /* Light grey background */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Change the font as desired */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3f3f3e; /* Dark grey header */
+    color: #fff; /* White text */
+}
+
+.topnav {
+    background-color: #525252; /* Dark grey navigation */
+    overflow: hidden;
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.topnav a:hover {
+    color: #292929; /* Darker grey on hover */
+    background-color: beige; /* Light beige background on hover */
+}
+
+/* Right-aligned links */
+.topnav-right {
+    float: right;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    float: left;
+    width: 65%; /* Adjusted content width */
+    padding: 30px; /* Reduced padding */
+    background-color: #fff; /* White background */
+}
+
+.sidebar {
+    float: left;
+    width: 35%; /* Adjusted sidebar width */
+    padding: 30px; /* Reduced padding */
+    background-color: #f0f0f0; /* Light grey sidebar background */
+}
+
+.footer {
+    text-align: center;
+    font-size: smaller; /* Slightly smaller font size */
+    color: beige;
+    background-color: #252525; /* Dark footer background */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 800px) {
+    .content, .sidebar {
+        width: 100%;
+    }
+    .content,
+    .sidebar {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+}
